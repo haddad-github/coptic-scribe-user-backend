@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "https://copticscribe.com")
+                        .allowedOrigins("http://localhost:3000", "https://copticscribe.com", "https://blue-smoke-09f427910-1.centralus.6.azurestaticapps.net/")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
