@@ -51,7 +51,7 @@ public class PasswordResetService {
         PasswordResetToken resetToken = new PasswordResetToken(token, user, expiration);
         tokenRepo.save(resetToken);
 
-        //PLACEHOLDER
+        //Placeholder
         return "http://localhost:3000/reset-password?token=" + token;
     }
 
