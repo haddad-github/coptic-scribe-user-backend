@@ -122,7 +122,7 @@ public class UserController {
     }
 
     /**
-     * Step 6 - Request a password reset link
+     * Request a password reset link
      * @param payload Contains the email of the user
      * @return The generated reset link (for now)
      */
@@ -136,12 +136,12 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
         }
 
-        // In real app: send this by email — for now we return the link
+        //Placeholder
         return ResponseEntity.ok(Collections.singletonMap("reset_link", link));
     }
 
     /**
-     * Step 6 - Handle reset using a token and new password
+     * Handle reset using a token and new password
      * @param payload Contains token and newPassword
      * @return success or failure
      */
