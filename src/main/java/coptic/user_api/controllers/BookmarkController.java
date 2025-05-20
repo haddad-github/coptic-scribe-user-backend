@@ -118,7 +118,7 @@ public class BookmarkController {
         bookmark.setArabicTranslation(arabicTranslation);
         bookmark.setNotes(notes);
 
-        // ✅ Use updateBookmark (cleaner logic & allows for easier override later if needed)
+        //Use updateBookmark
         bookmarkService.updateBookmark(bookmark);
 
         return ResponseEntity.ok("Bookmark updated successfully");
