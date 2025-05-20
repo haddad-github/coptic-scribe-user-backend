@@ -70,7 +70,7 @@ public class BookmarkService {
     @Transactional
     public Bookmark updateBookmark(Bookmark updatedBookmark) {
         Bookmark saved = bookmarkRepository.save(updatedBookmark);
-        bookmarkRepository.flush(); // 🔥 force update to DB now
+        bookmarkRepository.flush(); //force update to DB now
         return saved;
     }
 }
